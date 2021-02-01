@@ -2,6 +2,11 @@
 
 > my son is on winter vacation, he is not good at math , so i make a game project for him to practice math
 
+![priview](./md_data/atomsmath_priview.jpeg)
+
+
+
+
 ## Build Setup
 
 ``` bash
