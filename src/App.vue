@@ -9,7 +9,11 @@
 </p>
 </div>
 </div>
+<ui class="portfolioContainer">
+<li v-for="(mm , index) in m" class="ansers">{{ index }}.{{ mm.dividends }}÷{{ mm.divisors }}={{ mm.quotients }}<span v-if="mm.remainders>0">...{{ mm.remainders }}</span></li>
+</ui>
 </div>
+
 
 </div>
 </template>
@@ -77,7 +81,7 @@ padding: 0px;
 float: left;
 width: 25%;
 height: 165px;
-}
+ }
 .portfolioContainer:after {
 content: "";
 display: table;
@@ -87,6 +91,13 @@ clear: both;
 float: left;
 padding: 10px;
 }
+
+.ansers{
+list-style:none;
+float: left;
+width: 20%;
+}
+
 @media screen and (max-width: 900px) {
 .ImageCol {
 width: 50%;
